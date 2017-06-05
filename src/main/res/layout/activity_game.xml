@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="m4teo.numbersgame.GameActivity">
+
+    <Button
+        android:id="@+id/checkButton"
+        android:text="Check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@id/userAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:autoText="true"
+        android:textAlignment="center"
+        android:hint="Type number here"
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+         />
+    <TextView
+        android:text="Type number from range from 0 to 100. Try to guess number using as little attemps as you can.\nGood luck!"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:id="@+id/upperTextView" />
+
+    <TextView
+        android:id="@+id/logs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text=""
+        android:textAlignment="center"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/upperTextView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
